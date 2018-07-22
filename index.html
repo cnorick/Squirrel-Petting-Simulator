@@ -1,0 +1,71 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Squirrel Petting Simulator</title>
+
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/sylvester.js"></script>
+<script type="text/javascript" src="js/math.js"></script>
+<script type="text/javascript" src="js/helpers.js"></script>
+<script type="text/javascript" src="js/glUtils.js"></script>
+<script type="text/javascript" src="js/objloader.js"></script>
+<script type="text/javascript" src="js/meshLoader.js"></script>
+<script type="text/javascript" src="js/arcball.js"></script>
+<script type="text/javascript" src="js/animationSequences.js"></script>
+<script type="text/javascript" src="js/demo.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+
+<link href="external.css" rel="stylesheet"></link>
+</head>
+<body>
+<canvas id="glcanvas">canvas not supported</canvas>
+
+<div class="menu" id="game-menu">
+  <h1>Squirrel Petting Simulator</h1>
+
+  <br/>
+
+  <div class="effects-list">
+    <div class="controls">
+      <h2>Controls</h2>
+      <table>
+        <tr><td>Move up</td> <td>w / up arrow</td></tr>
+        <tr><td>Move down</td> <td>s / down arrow</td></tr>
+        <tr><td>Move right</td> <td>d / right arrow</td></tr>
+        <tr><td>Move left</td> <td>a / left arrow</td></tr>
+        <tr><td>Action</td> <td>space</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="buttons">
+    <div class="button-container"><button onclick="startGameScene()" id="start-button">Start</button></div>
+    <div class="button-container"><button onclick="reset()" class="danger">Reset</button></div>
+  </div>
+
+  <br>
+
+  <div class="thanks" id="thanks">
+    <h2>Thanks For Playing!</h2>
+    <p class="feedback">Email feedback to <a href="mailto:squirrelgame@nathanorick.com">squirrelgame@nathanorick.com</a></p>
+  </div>
+
+  <br/>
+
+  <footer>
+    &copy; <a href="http://nathanorick.com">Nathan Orick</a> 2018. All rights reserved.
+  </footer>
+</div>
+
+<div class="infobox" id="infobox"></div>
+
+<div class="gemCounter" id="gemCounter"></div>
+
+<script>
+  init();
+</script>
+</body>
+</html>

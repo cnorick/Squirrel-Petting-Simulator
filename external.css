@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  canvas {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  
+  .menu {
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(145, 145, 202, 0.5);
+    align-content: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+    .menu h1 {
+      width: 100%;
+      text-align: center;
+      margin: auto;
+      font-size: 3em;
+      color: white;
+      background-color: rgba(20, 45, 135, 0.6);
+      border-radius: 10px;
+      padding: 20px;
+      font-family: 'Oxygen', sans-serif;
+    }
+    
+    .buttons {
+      display: flex;
+      width: 50%;
+      margin: auto;
+    }
+    .buttons > .button-container {
+      flex: 1;
+      width: 50%;
+    }
+
+    .menu button {
+        background-color: rgba(76, 175, 80, .6);
+        border: none;
+        color: white;
+        padding: 30px 64px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        font-size: 14pt;
+        border-radius: 8px;
+        margin: auto;
+        cursor: pointer;
+        color: white;
+        min-height: 100px;
+        font-family: 'Oxygen', sans-serif;
+    }
+
+    .menu button:hover {
+        border: 4px solid rgb(76, 175, 80);
+    }
+    button.danger {
+        background-color: rgba(255, 0, 0, .6);
+    }
+    button.danger:hover {
+        border: 4px solid red;
+    }
+    button.info {
+        background-color: rgb(221, 120, 4, .6)
+    }
+    button.info:hover {
+        border: 4px solid rgb(221, 120, 4);
+    }
+
+    .menu .effects-list {
+        margin: auto;
+        text-align: center;
+        display: flex;
+        align-content: center;
+    }
+
+      .menu .effects-list > * {
+          background-color: rgba(20, 45, 135, 0.6);
+          border-radius: 10px;
+          padding: 20px;
+          margin: auto;
+          font-family: 'Oxygen', sans-serif;
+          font-size: 20pt;
+          color: white;
+      }
+      .menu .effects-list h2 {
+          text-decoration: underline;
+      }
+      .menu .effects-list ul {
+          list-style-type: none;
+          text-align: center;
+          color: white;
+      }
+          .menu .effects-list table, ul > li { 
+              font-size: 16pt;
+              margin: 10px;
+              color: white;
+          }
+          .menu .effects-list table { 
+              margin: auto;
+              margin-top: 10px;
+              margin-bottom: 10px;
+              border-collapse: collapse;
+          }
+          .menu .effects-list table, th, td { 
+            border: 1px solid white;
+          }
+          .menu .effects-list td { 
+            padding: 5px;
+          }
+
+  .menu .thanks {
+    margin: auto;
+    text-align: center;
+    display: none;
+    font-size: 4em;
+    margin-bottom: 40px;
+  }
+    .menu .thanks .feedback {
+        font-size: 16pt;
+    }
+
+  .menu footer {
+    height: auto;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(20, 45, 135, 0.6);
+    font-family: 'Oxygen', sans-serif;
+    color: white;
+  }
+    .menu footer > a {
+        color: rgba(214, 240, 214, 0.6);
+    }
+      .menu footer > a:hover {
+        color: rgba(163, 206, 163, 0.6);
+      }
+
+
+
+.infobox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(20, 45, 135, 0.6);
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 1;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 20pt;
+    color: white;
+}
+
+
+.gemCounter {
+    position: fixed;
+    top: 5%;
+    right: 10%;
+    background-color: rgba(7, 178, 27, 0.6);
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 1;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 15pt;
+    color: white;
+    display: none;
+}
