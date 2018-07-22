@@ -18,7 +18,7 @@
 
 <link href="external.css" rel="stylesheet"></link>
 </head>
-<body>
+<body id="body" onload="onPageLoad()">
 <canvas id="glcanvas">canvas not supported</canvas>
 
 <div class="menu" id="game-menu">
@@ -66,6 +66,17 @@
 
 <script>
   init();
+
+  function onPageLoad() {
+    function isMobileDevice() {
+      return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+    };
+    if(isMobileDevice()) {
+      let body = document.getElementById('body');
+      body.textContent = 'No mobile support. sorry :(';
+      body.classList.add('no-mobile');
+    }
+  }
 </script>
 </body>
 </html>
